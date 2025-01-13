@@ -3,8 +3,7 @@
 ---
 
 #### Introductions
-**Name:** Dian Aprilia Krismonita  
-**Batch:** HCK-022  
+**Name:** Dian Aprilia Krismonita
 
 ---
 
