@@ -1,0 +1,53 @@
+===========================================
+PENDAHULUAN
+===========================================
+-> Sintaks ini dibuat untuk membuat table dan memasukkan dataset yang telah diperoleh dari sumber kedalam database PostgreSQL.
+
+
+===========================================
+LINK DATASET
+===========================================
+LINK DATASET: https://www.kaggle.com/datasets/mexwell/employee-performance-and-productivity-data
+
+
+===========================================
+Data Definition Language Syntax
+===========================================
+-> Menentukan struktur tabel 'emp_perf', kolom, tipe data, dengan menggunakan sintaks 'CREATE TABLE'.
+
+CREATE TABLE emp_perf (
+    "Employee_ID" INT PRIMARY KEY,
+    "Department" VARCHAR(100),
+    "Gender" VARCHAR(10),
+    "Age" INT,
+    "Job_Title" VARCHAR(100),
+    "Hire_Date" DATE,
+    "Years_At_Company" INT,
+    "Education_Level" VARCHAR(50),
+    "Performance_Score" INT,
+    "Monthly_Salary" FLOAT,
+    "Work_Hours_Per_Week" INT,
+    "Projects_Handled" INT,
+    "Overtime_Hours" INT,
+    "Sick_Days" INT,
+    "Remote_Work_Frequency" INT,
+    "Team_Size" INT,
+    "Training_Hours" INT,
+    "Promotions" INT,
+    "Employee_Satisfaction_Score" FLOAT,
+    "Resigned" BOOLEAN
+);
+
+===========================================
+Data Manipulation Language Syntax
+===========================================
+-> Memasukkan data dari CSV yang telah diunduh dari sumber di atas kedalam table 'emp_perf' menggunakan sintaks 'COPY'.
+
+COPY emp_perf(Employee_ID, Department, Gender, Age, Job_Title, Hire_Date, 
+              Years_At_Company, Education_Level, Performance_Score, Monthly_Salary, 
+              Work_Hours_Per_Week, Projects_Handled, Overtime_Hours, Sick_Days, 
+              Remote_Work_Frequency, Team_Size, Training_Hours, Promotions, 
+              Employee_Satisfaction_Score, Resigned)
+FROM '/private/var/tmp/employee_performance.csv'
+DELIMITER ','
+CSV HEADER;
