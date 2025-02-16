@@ -51,7 +51,7 @@ This report shows that specialists and managers perform the best, while technici
 
 ## About the Author 👩‍💻  
 
-**Rafina Dhiya Pradani** | 📧 [Email](mailto:dianakrism9@gmail.com) | 🌐 [LinkedIn](https://www.linkedin.com/in/q2a-statistician/)
+**Dian Aprilia Krismonita** | 📧 [Email](mailto:dianakrism9@gmail.com) | 🌐 [LinkedIn](https://www.linkedin.com/in/q2a-statistician/)
 
 ---
 
